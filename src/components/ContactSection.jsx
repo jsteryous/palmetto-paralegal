@@ -8,7 +8,7 @@ const initialValues = {
   message: "",
 };
 
-export default function ContactSection({ brand, seoPhrases }) {
+export default function ContactSection({ brand }) {
   const [formValues, setFormValues] = useState(initialValues);
   const [status, setStatus] = useState({ type: "idle", message: "" });
 
@@ -78,9 +78,6 @@ export default function ContactSection({ brand, seoPhrases }) {
             </li>
             <li className="rounded-2xl border border-slate-200 bg-white px-5 py-4">
               {brand.hours}
-            </li>
-            <li className="rounded-2xl border border-slate-200 bg-white px-5 py-4">
-              SEO terms: {seoPhrases.join(" | ")}
             </li>
           </ul>
         </div>

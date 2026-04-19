@@ -89,7 +89,7 @@ export default function App() {
         <HeroSection brand={brand} />
         <ServicesSection brand={brand} services={services} seoPhrases={seoPhrases} />
         <AboutSection brand={brand} />
-        <ContactSection brand={brand} seoPhrases={seoPhrases} />
+        <ContactSection brand={brand} />
       </main>
 
       <Footer brand={brand} />

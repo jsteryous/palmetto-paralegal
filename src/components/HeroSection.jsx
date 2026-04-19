@@ -7,17 +7,16 @@ export default function HeroSection({ brand }) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(148,163,184,0.28),_transparent_38%),linear-gradient(135deg,_rgba(15,23,42,0.98),_rgba(30,41,59,0.92))]" />
       <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0))] lg:block" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-32">
-        <div className="max-w-3xl">
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[minmax(0,0.95fr)_minmax(320px,0.72fr)] lg:items-start lg:px-8 lg:py-32 xl:gap-16">
+        <div className="max-w-2xl">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-slate-300">
             Trusted legal support in {brand.city}, {brand.region}
           </p>
           <h1
             id="hero-heading"
-            className="max-w-3xl font-serif text-5xl leading-tight text-white md:text-6xl"
+            className="max-w-2xl font-serif text-4xl leading-tight text-white md:text-5xl xl:text-6xl"
           >
-            Professional paralegal support for attorneys, firms, and clients across{" "}
-            {brand.serviceArea}
+            Trusted paralegal support in {brand.city} for attorneys, firms, and clients
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             {brand.name} delivers polished document preparation, case organization,
