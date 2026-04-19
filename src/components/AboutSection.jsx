@@ -7,19 +7,20 @@ export default function AboutSection({ brand }) {
             About
           </p>
           <h2 id="about-heading" className="mt-4 font-serif text-4xl leading-tight">
-            Professional support with the polish expected in modern legal practice
+            A dependable legal support partner for modern firms in {brand.city}
           </h2>
           <p className="mt-6 text-base leading-8 text-slate-300">
             Based in {brand.city}, {brand.region}, {brand.name} is positioned as a
-            responsive local partner for document preparation, intake support, and
-            matter coordination. This section can be finalized with credentials,
-            practice background, software proficiency, and experience supporting
-            attorneys or legal departments in South Carolina.
+            responsive freelance paralegal resource for solo attorneys, small firms,
+            and growing practices that need organized support behind the scenes. This
+            section should ultimately highlight credentials, legal workflow experience,
+            software familiarity, and the standards of professionalism the business brings
+            to every matter.
           </p>
           <p className="mt-6 text-base leading-8 text-slate-300">
-            The copy is intentionally structured to support local search terms such as
-            Greenville SC paralegal services, Upstate legal document preparation, and
-            administrative legal support in South Carolina.
+            The message should reinforce the business case for hiring outside support:
+            less administrative drag, more consistent execution, and added capacity
+            without committing to a full-time in-house role.
           </p>
         </div>
 
@@ -29,24 +30,24 @@ export default function AboutSection({ brand }) {
           </p>
           <div className="mt-8 space-y-8 text-slate-600">
             <div>
-              <h3 className="font-serif text-2xl text-slate-950">Executive presentation</h3>
+              <h3 className="font-serif text-2xl text-slate-950">Protect attorney time</h3>
               <p className="mt-3 leading-7">
-                The site uses restrained typography, disciplined spacing, and a premium
-                navy-led palette to signal trust from the first screen.
+                The strongest firms delegate repeatable workflow tasks so attorneys can
+                focus on billable work, case strategy, and client relationships.
               </p>
             </div>
             <div>
-              <h3 className="font-serif text-2xl text-slate-950">Conversion-first flow</h3>
+              <h3 className="font-serif text-2xl text-slate-950">Reduce operational drag</h3>
               <p className="mt-3 leading-7">
-                Service clarity, local relevance, and a consultation CTA are repeated in
-                the right places without feeling pushy or generic.
+                Organized intake, clean files, and dependable follow-through help firms
+                move faster with less bottlenecking around administrative work.
               </p>
             </div>
             <div>
-              <h3 className="font-serif text-2xl text-slate-950">Search visibility ready</h3>
+              <h3 className="font-serif text-2xl text-slate-950">Add flexible capacity</h3>
               <p className="mt-3 leading-7">
-                The page now includes semantic sections, metadata, and structured data
-                that can be expanded as soon as final business details are confirmed.
+                Contract-style paralegal support gives smaller practices room to grow
+                without immediately taking on the cost of a full-time employee.
               </p>
             </div>
           </div>

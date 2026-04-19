@@ -20,29 +20,23 @@ const services = [
   {
     title: "Document Preparation",
     description:
-      "Preparation of affidavits, pleadings, discovery responses, demand packages, and court-ready filings with a disciplined review process.",
+      "Drafting support for pleadings, discovery, affidavits, correspondence, and court-ready documents prepared with accuracy and consistency.",
   },
   {
-    title: "Case Management Support",
+    title: "Overflow Firm Support",
     description:
-      "Deadline tracking, matter organization, file assembly, and administrative coordination for attorneys and growing law offices.",
+      "Flexible paralegal capacity for solo attorneys and small firms that need dependable help without adding a full-time hire.",
   },
   {
-    title: "Client Intake And File Review",
+    title: "Client Intake And Matter Setup",
     description:
-      "Structured intake systems that capture the right facts early, improve responsiveness, and reduce administrative drag.",
+      "Organized intake, file opening, document collection, and matter setup that improve responsiveness from the first client touchpoint.",
   },
   {
-    title: "Research And Procedural Support",
+    title: "Case File And Deadline Support",
     description:
-      "Targeted legal and procedural research assistance for matters that require careful documentation and dependable follow-through.",
+      "File organization, deadline visibility, and administrative case support that help firms stay on top of active matters.",
   },
-];
-
-const seoPhrases = [
-  "Professional Paralegal Services in Upstate SC",
-  "Greenville SC paralegal support",
-  "Legal document preparation in Greenville",
 ];
 
 export default function App() {
@@ -80,14 +74,14 @@ export default function App() {
             href="#contact"
             className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
           >
-            Schedule a Consultation
+            Schedule a Firm Consultation
           </a>
         </div>
       </header>
 
       <main id="top">
         <HeroSection brand={brand} />
-        <ServicesSection brand={brand} services={services} seoPhrases={seoPhrases} />
+        <ServicesSection brand={brand} services={services} />
         <AboutSection brand={brand} />
         <ContactSection brand={brand} />
       </main>

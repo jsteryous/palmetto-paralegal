@@ -61,12 +61,12 @@ export default function ContactSection({ brand }) {
             Contact
           </p>
           <h2 id="contact-heading" className="mt-4 font-serif text-4xl text-slate-950">
-            Schedule a confidential consultation in {brand.city}, {brand.region}
+            Discuss support for your practice in {brand.city}, {brand.region}
           </h2>
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-            Start with a concise intake. This form is designed to capture qualified
-            consultation requests from prospective clients, attorneys, and referral
-            partners seeking professional paralegal services in {brand.serviceArea}.
+            Start with a concise intake. This form is built for attorneys, firms, and
+            referral partners who need dependable paralegal support for active matters,
+            overflow work, or ongoing administrative workflows.
           </p>
 
           <ul className="mt-10 space-y-4 text-sm text-slate-600">
@@ -141,7 +141,7 @@ export default function ContactSection({ brand }) {
             </label>
             <label className="block sm:col-span-2">
               <span className="mb-2 block text-sm font-medium text-slate-700">
-                How can we help? *
+                What support does your practice need? *
               </span>
               <textarea
                 name="message"
@@ -149,7 +149,7 @@ export default function ContactSection({ brand }) {
                 value={formValues.message}
                 onChange={handleChange}
                 className="w-full rounded-[1.5rem] border border-slate-300 px-4 py-3 text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-slate-950"
-                placeholder="Tell us about the matter, support needed, and any deadlines."
+                placeholder="Tell us about your practice, workload, matter type, and any deadlines."
                 required
               />
             </label>
@@ -169,14 +169,14 @@ export default function ContactSection({ brand }) {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm leading-6 text-slate-500">
-              By submitting, you are requesting a reply regarding paralegal services in{" "}
-              {brand.city}, {brand.region}.
+              By submitting, you are requesting a reply about freelance paralegal
+              support for your practice in {brand.city}, {brand.region}.
             </p>
             <button
               type="submit"
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-4 text-sm font-semibold text-white transition hover:bg-slate-700"
             >
-              Send Consultation Request
+              Request A Consultation
             </button>
           </div>
         </form>

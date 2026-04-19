@@ -10,7 +10,7 @@ function ServiceCard({ title, description }) {
   );
 }
 
-export default function ServicesSection({ brand, services, seoPhrases }) {
+export default function ServicesSection({ brand, services }) {
   return (
     <section id="services" className="bg-slate-50 py-24" aria-labelledby="services-heading">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -20,23 +20,23 @@ export default function ServicesSection({ brand, services, seoPhrases }) {
               Services
             </p>
             <h2 id="services-heading" className="mt-4 font-serif text-4xl text-slate-950">
-              Professional paralegal services designed to keep matters organized and moving
+              Practical paralegal support for firms that need reliable execution and extra capacity
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              {brand.name} supports attorneys, firms, and self-directed clients with
-              disciplined administrative help, polished documentation, and dependable
-              communication across {brand.city} and {brand.serviceArea}.
+              {brand.name} supports attorneys and law firms with disciplined
+              administrative help, polished documentation, and dependable workflow
+              support across {brand.city} and {brand.serviceArea}.
             </p>
           </div>
 
           <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 text-sm leading-7 text-slate-600 shadow-sm">
             <p className="font-semibold uppercase tracking-[0.28em] text-slate-500">
-              Local SEO Focus
+              Built For Firms That Need To
             </p>
             <ul className="mt-4 space-y-2">
-              {seoPhrases.map((phrase) => (
-                <li key={phrase}>{phrase}</li>
-              ))}
+              <li>Protect attorney time for higher-value work</li>
+              <li>Improve responsiveness to new and existing clients</li>
+              <li>Stay organized without adding in-house overhead</li>
             </ul>
           </div>
         </div>

@@ -16,13 +16,12 @@ export default function HeroSection({ brand }) {
             id="hero-heading"
             className="max-w-2xl font-serif text-4xl leading-tight text-white md:text-5xl xl:text-6xl"
           >
-            Trusted paralegal support in {brand.city} for attorneys, firms, and clients
+            Freelance paralegal support for busy attorneys and law firms in {brand.city}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            {brand.name} delivers polished document preparation, case organization,
-            and intake support with the discretion and responsiveness serious legal
-            work requires. Built for the pace of modern practice, grounded in local
-            service.
+            {brand.name} helps solo attorneys, small firms, and growing practices
+            manage document preparation, intake, file organization, and legal
+            administrative workflows with dependable, detail-focused support.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -30,7 +29,7 @@ export default function HeroSection({ brand }) {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
             >
-              Schedule a Consultation
+              Schedule a Firm Consultation
             </a>
             <a
               href={`tel:${brand.phone.replace(/[^\d]/g, "")}`}
@@ -43,15 +42,15 @@ export default function HeroSection({ brand }) {
           <div className="mt-10 grid gap-6 border-t border-white/10 pt-8 text-sm text-slate-300 sm:grid-cols-3">
             <div>
               <p className="text-2xl font-serif text-white">24h</p>
-              <p className="mt-2 leading-6">Response target for consultation inquiries.</p>
+              <p className="mt-2 leading-6">Response target for new firm consultation inquiries.</p>
             </div>
             <div>
-              <p className="text-2xl font-serif text-white">Local</p>
-              <p className="mt-2 leading-6">Focused on Greenville and the wider Upstate market.</p>
+              <p className="text-2xl font-serif text-white">Flexible</p>
+              <p className="mt-2 leading-6">Extra support without the cost of a full-time hire.</p>
             </div>
             <div>
               <p className="text-2xl font-serif text-white">Detail-first</p>
-              <p className="mt-2 leading-6">Professional workflows designed around accuracy.</p>
+              <p className="mt-2 leading-6">Built to protect attorney time and reduce cleanup work.</p>
             </div>
           </div>
         </div>
@@ -62,24 +61,24 @@ export default function HeroSection({ brand }) {
           </p>
           <div className="mt-8 space-y-6">
             <div>
-              <p className="text-4xl font-serif text-white">Strategic</p>
+              <p className="text-4xl font-serif text-white">Reliable</p>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Every engagement starts with clear scope, practical next steps, and a
-                professional intake experience.
+                Work is handled with clear communication, steady follow-through, and
+                the consistency firms need when deadlines matter.
               </p>
             </div>
             <div>
-              <p className="text-4xl font-serif text-white">Responsive</p>
+              <p className="text-4xl font-serif text-white">Organized</p>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Timely updates and organized communication help attorneys and clients
-                stay informed without friction.
+                Intake, documents, and files are managed with structure so attorneys
+                spend less time chasing administrative details.
               </p>
             </div>
             <div>
-              <p className="text-4xl font-serif text-white">Trusted</p>
+              <p className="text-4xl font-serif text-white">Professional</p>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Built for credibility with a restrained, high-end presentation and
-                service language tailored to legal work.
+                The service is positioned for firms that expect discretion,
+                responsiveness, and polished execution behind the scenes.
               </p>
             </div>
           </div>
