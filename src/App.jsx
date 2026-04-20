@@ -2,14 +2,18 @@ import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
+import PalmettoMark from "./components/PalmettoMark";
 import ServicesSection from "./components/ServicesSection";
 import StructuredData from "./components/StructuredData";
+import ThemeToggle from "./components/ThemeToggle";
 
 const brand = {
   name: "Palmetto Paralegal",
+  tagline: "Title Search Specialists",
   city: "Greenville",
   region: "SC",
   serviceArea: "Upstate South Carolina",
+  yearsExperience: 20,
   phone: "(864) 555-0148",
   email: "consultations@palmettoparalegal.com",
   address: "105 River Street, Greenville, SC 29601",
@@ -18,64 +22,81 @@ const brand = {
 
 const services = [
   {
-    title: "Document Preparation",
+    title: "Title Searches",
     description:
-      "Drafting support for pleadings, discovery, affidavits, correspondence, and court-ready documents prepared with accuracy and consistency.",
+      "Full-chain title searches with a clear, attorney-ready report: deed history, recorded encumbrances, easements, and exceptions — organized for review and closing.",
   },
   {
-    title: "Overflow Firm Support",
+    title: "Deed & Lien Research",
     description:
-      "Flexible paralegal capacity for solo attorneys and small firms that need dependable help without adding a full-time hire.",
+      "Targeted deed, mortgage, judgment, and tax lien pulls with source documents attached, so nothing important shows up after closing.",
   },
   {
-    title: "Client Intake And Matter Setup",
+    title: "Property Document Prep",
     description:
-      "Organized intake, file opening, document collection, and matter setup that improve responsiveness from the first client touchpoint.",
+      "Clean packets for real estate matters: legal descriptions, ownership history, supporting exhibits, and a summary your attorney can hand straight to a client.",
   },
   {
-    title: "Case File And Deadline Support",
+    title: "Overflow Paralegal Support",
     description:
-      "File organization, deadline visibility, and administrative case support that help firms stay on top of active matters.",
+      "Extra capacity for busy periods — title work, intake, filings, and document prep — without adding a full-time hire.",
   },
 ];
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="min-h-screen bg-[var(--canvas)] text-slate-900 dark:text-sand-100">
       <StructuredData brand={brand} />
 
-      <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
-          <a href="#top" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold uppercase tracking-[0.2em] text-white">
-              PP
+      <header className="sticky top-0 z-50 border-b border-[color:var(--line)] bg-[color:var(--canvas)]/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
+          <a href="#top" className="flex min-w-0 items-center gap-3">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-palmetto-900 text-sand-100 shadow-mark dark:bg-palmetto-800">
+              <PalmettoMark className="h-8 w-8" title="Palmetto Paralegal logo" />
             </div>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-                {brand.city}, {brand.region}
+            <div className="min-w-0">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-palmetto-700 dark:text-palmetto-200">
+                {brand.tagline}
               </p>
-              <p className="font-serif text-xl text-slate-950">{brand.name}</p>
+              <p className="truncate font-display text-[1.35rem] font-bold leading-[1.15] text-palmetto-900 dark:text-sand-50">
+                {brand.name}
+              </p>
             </div>
           </a>
 
-          <nav aria-label="Primary" className="hidden gap-8 text-sm text-slate-600 md:flex">
-            <a className="transition hover:text-slate-950" href="#services">
+          <nav
+            aria-label="Primary"
+            className="hidden items-center gap-1 rounded-full border border-[color:var(--line)] bg-white p-1 text-sm text-slate-700 dark:bg-charcoal-900 dark:text-sand-100 md:flex"
+          >
+            <a
+              className="rounded-full px-4 py-2 transition hover:bg-palmetto-900 hover:text-white dark:hover:bg-palmetto-700"
+              href="#services"
+            >
               Services
             </a>
-            <a className="transition hover:text-slate-950" href="#about">
+            <a
+              className="rounded-full px-4 py-2 transition hover:bg-palmetto-900 hover:text-white dark:hover:bg-palmetto-700"
+              href="#about"
+            >
               About
             </a>
-            <a className="transition hover:text-slate-950" href="#contact">
+            <a
+              className="rounded-full px-4 py-2 transition hover:bg-palmetto-900 hover:text-white dark:hover:bg-palmetto-700"
+              href="#contact"
+            >
               Contact
             </a>
           </nav>
 
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
-          >
-            Schedule a Firm Consultation
-          </a>
+          <div className="flex shrink-0 items-center gap-3">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="hidden sm:inline-flex items-center rounded-full bg-palmetto-900 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-palmetto-700 dark:bg-palmetto-600 dark:hover:bg-palmetto-500"
+            >
+              Request a Title Search
+            </a>
+          </div>
         </div>
       </header>
 

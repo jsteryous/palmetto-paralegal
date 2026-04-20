@@ -1,85 +1,89 @@
+import DocumentIllustration from "./DocumentIllustration";
+
 export default function HeroSection({ brand }) {
   return (
     <section
-      className="relative overflow-hidden bg-slate-950 text-white"
+      className="relative overflow-hidden border-b border-[color:var(--line)] bg-[color:var(--canvas)]"
       aria-labelledby="hero-heading"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(148,163,184,0.28),_transparent_38%),linear-gradient(135deg,_rgba(15,23,42,0.98),_rgba(30,41,59,0.92))]" />
-      <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0))] lg:block" />
-
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[minmax(0,0.95fr)_minmax(320px,0.72fr)] lg:items-start lg:px-8 lg:py-32 xl:gap-16">
-        <div className="max-w-2xl">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-slate-300">
-            Trusted legal support in {brand.city}, {brand.region}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        style={{
+          backgroundImage:
+            "radial-gradient(60% 50% at 85% 10%, rgba(47,127,92,0.15), transparent 60%), radial-gradient(40% 40% at 10% 90%, rgba(15,61,46,0.1), transparent 60%)",
+        }}
+      />
+      <div className="relative mx-auto grid max-w-7xl gap-14 px-6 py-16 lg:grid-cols-[minmax(0,1fr)_minmax(360px,0.95fr)] lg:items-center lg:px-8 lg:py-24">
+        <div className="min-w-0 max-w-2xl">
+          <p className="inline-flex items-center gap-2 rounded-full border border-palmetto-200 bg-white px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-palmetto-800 dark:border-charcoal-700 dark:bg-charcoal-800 dark:text-palmetto-200">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-palmetto-600 dark:bg-palmetto-300" />
+            Title Searches · Greenville &amp; Upstate SC
           </p>
+
           <h1
             id="hero-heading"
-            className="max-w-2xl font-serif text-4xl leading-tight text-white md:text-5xl xl:text-6xl"
+            className="mt-7 font-display text-5xl font-semibold leading-[1.02] text-palmetto-900 dark:text-sand-50 md:text-6xl"
           >
-            Freelance paralegal support for busy attorneys and law firms in {brand.city}
+            Title searches you can trust,
+            <span className="text-palmetto-700 dark:text-palmetto-200"> backed by {brand.yearsExperience}+ years of experience.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            {brand.name} helps solo attorneys, small firms, and growing practices
-            manage document preparation, intake, file organization, and legal
-            administrative workflows with dependable, detail-focused support.
+
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700 dark:text-sand-100/85">
+            {brand.name} delivers clear, attorney-ready title reports for real estate
+            matters across {brand.city} and {brand.serviceArea}. Thorough research.
+            Organized documents. No surprises at closing.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-full bg-white px-7 py-4 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
+              className="inline-flex items-center justify-center rounded-full bg-palmetto-900 px-7 py-4 text-sm font-semibold text-white shadow-soft hover:-translate-y-0.5 hover:bg-palmetto-700 dark:bg-palmetto-600 dark:hover:bg-palmetto-500"
             >
-              Schedule a Firm Consultation
+              Request a Title Search
             </a>
             <a
-              href={`tel:${brand.phone.replace(/[^\d]/g, "")}`}
-              className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-4 text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/5"
+              href="#services"
+              className="inline-flex items-center justify-center rounded-full border border-palmetto-300 bg-white px-7 py-4 text-sm font-semibold text-palmetto-900 hover:border-palmetto-600 hover:bg-palmetto-50 dark:border-charcoal-600 dark:bg-charcoal-800 dark:text-sand-50 dark:hover:border-palmetto-400 dark:hover:bg-charcoal-700"
             >
-              Call {brand.phone}
+              See What&rsquo;s Included
             </a>
           </div>
 
-          <div className="mt-10 grid gap-6 border-t border-white/10 pt-8 text-sm text-slate-300 sm:grid-cols-3">
+          <dl className="mt-12 grid gap-6 border-t border-[color:var(--line)] pt-8 sm:grid-cols-3">
             <div>
-              <p className="text-2xl font-serif text-white">24h</p>
-              <p className="mt-2 leading-6">Response target for new firm consultation inquiries.</p>
+              <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">{brand.yearsExperience}+</dt>
+              <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Years researching SC property records</dd>
             </div>
             <div>
-              <p className="text-2xl font-serif text-white">Flexible</p>
-              <p className="mt-2 leading-6">Extra support without the cost of a full-time hire.</p>
+              <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">Upstate</dt>
+              <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Greenville, Spartanburg, Anderson &amp; Pickens counties</dd>
             </div>
             <div>
-              <p className="text-2xl font-serif text-white">Detail-first</p>
-              <p className="mt-2 leading-6">Built to protect attorney time and reduce cleanup work.</p>
+              <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">24h</dt>
+              <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Typical response on new matters</dd>
             </div>
-          </div>
+          </dl>
         </div>
 
-        <aside className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-soft backdrop-blur-sm">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-300">
-            Why clients choose {brand.name}
-          </p>
-          <div className="mt-8 space-y-6">
-            <div>
-              <p className="text-4xl font-serif text-white">Reliable</p>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                Work is handled with clear communication, steady follow-through, and
-                the consistency firms need when deadlines matter.
-              </p>
-            </div>
-            <div>
-              <p className="text-4xl font-serif text-white">Organized</p>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                Intake, documents, and files are managed with structure so attorneys
-                spend less time chasing administrative details.
-              </p>
-            </div>
-            <div>
-              <p className="text-4xl font-serif text-white">Professional</p>
-              <p className="mt-2 text-sm leading-7 text-slate-300">
-                The service is positioned for firms that expect discretion,
-                responsiveness, and polished execution behind the scenes.
-              </p>
+        <aside className="min-w-0 lg:justify-self-end">
+          <div className="rounded-[1.75rem] border border-palmetto-100 bg-white p-4 shadow-panel sm:p-6 dark:border-charcoal-700 dark:bg-charcoal-900">
+            <div className="rounded-[1.4rem] border border-palmetto-100 bg-sand-50 p-4 sm:p-5 dark:border-charcoal-700 dark:bg-charcoal-950">
+              <div className="mb-5 flex items-center justify-between gap-4 border-b border-palmetto-100 pb-4 dark:border-charcoal-700">
+                <div>
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-palmetto-700 dark:text-palmetto-200">
+                    Sample Deliverable
+                  </p>
+                  <p className="mt-2 font-display text-lg font-semibold text-palmetto-900 dark:text-sand-50">
+                    Title search summary packet
+                  </p>
+                </div>
+                <div className="rounded-full border border-palmetto-200 bg-white px-3 py-2 text-xs font-semibold text-palmetto-800 dark:border-charcoal-700 dark:bg-charcoal-800 dark:text-palmetto-200">
+                  {brand.city}, {brand.region}
+                </div>
+              </div>
+
+              <DocumentIllustration />
             </div>
           </div>
         </aside>

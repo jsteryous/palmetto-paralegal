@@ -4,27 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta
-      name="keywords"
-      content="Greenville SC paralegal, Upstate SC paralegal services, legal document preparation Greenville, paralegal support South Carolina"
-    />
+    <meta name="theme-color" content="#0f3d2e" />
     <meta
       name="description"
-      content="Palmetto Paralegal provides professional paralegal services in Greenville, SC with document preparation, intake support, case organization, and consultation scheduling for clients across Upstate South Carolina."
+      content="Title search services in Greenville and Upstate South Carolina. Palmetto Paralegal delivers clear, attorney-ready title reports backed by 20+ years of experience."
     />
-    <meta property="og:title" content="Palmetto Paralegal | Professional Paralegal Services in Greenville, SC" />
+    <meta
+      name="keywords"
+      content="title search Greenville SC, title search Upstate South Carolina, paralegal title search, real estate title search, deed research, lien search, Greenville paralegal, Palmetto Paralegal"
+    />
+    <meta name="author" content="Palmetto Paralegal" />
+    <meta name="geo.region" content="US-SC" />
+    <meta name="geo.placename" content="Greenville" />
+    <meta property="og:title" content="Title Search Services in Greenville, SC | Palmetto Paralegal" />
     <meta
       property="og:description"
-      content="Professional paralegal services in Upstate SC with a modern intake experience, trusted support, and Greenville-focused local search positioning."
+      content="Clear, attorney-ready title searches for Greenville and Upstate SC firms. 20+ years of experience with deed, lien, and property research."
     />
+    <meta property="og:site_name" content="Palmetto Paralegal" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:url" content="https://www.palmettoparalegal.com" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Title Search Services in Greenville, SC | Palmetto Paralegal" />
+    <meta
+      name="twitter:description"
+      content="Attorney-ready title searches across Greenville and Upstate SC. 20+ years of experience."
+    />
     <link rel="canonical" href="https://www.palmettoparalegal.com" />
-    <title>Palmetto Paralegal | Greenville, SC</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Title Search Services in Greenville, SC | Palmetto Paralegal</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("palmetto-theme");
+          var theme =
+            stored === "light" || stored === "dark"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          if (theme === "dark") document.documentElement.classList.add("dark");
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-slate-50">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

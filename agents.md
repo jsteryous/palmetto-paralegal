@@ -1,40 +1,38 @@
 # Project Context
 
 ## Overview
-- Project name: `palmetto-paralegal`
+- Project: `palmetto-paralegal`
 - Stack: React 18, Vite 5, Tailwind CSS 3
 - Purpose: marketing site for a Greenville, South Carolina paralegal brand
-- Design direction: high-end, trustworthy, modern, restrained
+- Direction: premium, credible, restrained
 
-## Current Homepage Structure
-- `src/App.jsx`: top-level brand data and page composition
-- `src/components/HeroSection.jsx`: hero, primary CTA, trust/value framing
-- `src/components/ServicesSection.jsx`: services grid and local SEO support copy
-- `src/components/AboutSection.jsx`: positioning and background section
+## Current Structure
+- `src/App.jsx`: brand data, page composition, header
+- `src/components/PalmettoMark.jsx`: logo mark used in header/favicon
+- `src/components/HeroSection.jsx`: hero copy, CTA row, right-side value panel
+- `src/components/ServicesSection.jsx`: services grid
+- `src/components/AboutSection.jsx`: about card and positioning copy
 - `src/components/ContactSection.jsx`: consultation form with client-side validation and `mailto:` flow
-- `src/components/StructuredData.jsx`: JSON-LD schema for local/legal service SEO
-- `src/components/Footer.jsx`: footer contact and location summary
+- `src/components/StructuredData.jsx`: JSON-LD schema
+- `src/components/Footer.jsx`: footer and photo attribution
 
-## Brand And UX Notes
-- Visual palette: deep navy, slate gray, crisp white
-- Tone: premium, credible, professional, local
+## Brand Notes
+- Palette: deep navy, slate, white
+- Tone: local, professional, modern
 - Primary CTA: `Schedule a Consultation`
-- Avoid visible SEO keyword stuffing in UI copy
-- Keep hero copy short enough to stay contained on desktop layouts
+- Keep hero copy short and contained
+- Avoid visible keyword stuffing
 
-## Known Placeholder Data
-- Phone number
-- Email address
-- Street address
-- Canonical domain
-- Final about/credential copy
+## Content Notes
+- Still placeholder: phone, email, street address, about/credential copy
+- Greenville photos are used as restrained background treatment, not standalone gallery content
 
 ## Engineering Notes
-- Use semantic HTML and keep sections modular
-- Prefer clean Tailwind utilities over heavy abstraction
-- Preserve performance: minimal dependencies, no unnecessary client logic
-- Verify changes with `npm run build`
+- Keep sections semantic and modular
+- Prefer straightforward Tailwind utilities
+- Avoid unnecessary dependencies or client logic
+- Verify with `npm run build`
 
-## Git Notes
-- Default branch: `main`
+## Git
+- Branch: `main`
 - Remote: `origin` -> `https://github.com/jsteryous/palmetto-paralegal.git`
