@@ -17,9 +17,9 @@ export default function Footer({ brand }) {
             </div>
           </div>
           <p className="mt-5 text-sm leading-7 text-sand-100">
-            Title searches, deed and lien research, and paralegal support for real
-            estate attorneys across {brand.city} and {brand.serviceArea}. {brand.yearsExperience}+
-            years of SC property records experience.
+            Title searches, deed and lien research, and overflow paralegal support
+            for solo attorneys and small firms across {brand.city} and {brand.serviceArea}.
+            {" "}{brand.yearsExperience}+ years in SC property records.
           </p>
         </div>
 

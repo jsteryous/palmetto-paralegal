@@ -17,16 +17,18 @@ Marketing site for a Greenville, SC paralegal practice. The client specializes i
 - Primary CTA: "Request a Title Search"
 
 ### Palette
-- Palmetto green (`palmetto-50`…`palmetto-950`) — primary
-- Sand (`sand-50`/`100`/`200`) — warm neutral
+- Palmetto green (`palmetto-50`…`palmetto-950`) — primary brand (buttons, accents, featured cards, footer)
+- Sand (`sand-50`/`100`/`200`) — warm neutral for light mode and dim-mode body text
+- Charcoal (`charcoal-50`…`charcoal-950`) — dim-mode surfaces/borders (neutral, not green)
 - Defined in `tailwind.config.js`; CSS vars in `src/index.css`
 
 ### Theming (light / dim)
 - Tailwind `darkMode: "class"` — toggled by `.dark` on `<html>`.
-- CSS vars in `src/index.css` swap under `html.dark` (canvas, surface, line, input background, focus ring). Dark canvas `#071a13`; surfaces on `palmetto-900/800`; body text `sand-100`.
+- CSS vars in `src/index.css` swap under `html.dark` (canvas, surface, line, input background, focus ring). **Dim mode is charcoal, not dark-green** — canvas `#131517`, surfaces on `charcoal-800/900`, body text `sand-100`. Palmetto stays as accent only (buttons, eyebrows, primary coverage pill, featured service card, footer).
+- Dim-mode eyebrow/accent text uses `palmetto-200` (not `-300`) — the lighter green has stronger contrast on charcoal for small uppercase tracked labels.
 - `ThemeToggle.jsx` persists choice to `localStorage` (key `palmetto-theme`), respects `prefers-color-scheme` on first load.
 - Pre-hydration script in `index.html` sets the class before React mounts to prevent FOUC.
-- When adding a section: every hardcoded `bg-white`, `text-slate-*`, `text-palmetto-900` needs a `dark:` variant or it becomes unreadable. Prefer CSS vars (`bg-[var(--canvas)]`) where possible.
+- When adding a section: every hardcoded `bg-white`, `text-slate-*`, `text-palmetto-900` needs a `dark:` variant. For surfaces/cards/inputs use `dark:bg-charcoal-800|900` + `dark:border-charcoal-700`; for body text `dark:text-sand-50|100` (avoid opacity below `/80`); for accents `dark:text-palmetto-200`. Prefer CSS vars (`bg-[var(--canvas)]`) where possible.
 
 ### Typography
 - Display: **Fraunces** (serif, headings, `.font-display`) — never combine with `leading-none`; descenders (g/p/y) clip.
@@ -82,3 +84,4 @@ SEO/polish paused until client confirms real contact info. Outstanding items:
 - Remote: `origin` → `https://github.com/jsteryous/palmetto-paralegal.git`
 - Recent direction: pivoted from generic "paralegal support" site to title-search-led positioning with refreshed palette, logo, and SEO (2026-04).
 - Follow-up pass (2026-04-19): rebuilt sample deliverable SVG in palmetto palette with chain-of-title + findings card; replaced faux Upstate SVG map with Coverage Area tile grid; added service-card icons; added dim-mode toggle with CSS-var-based theming and pre-hydration script; tightened footer text contrast; fixed header wordmark descender clipping (`leading-none` → `leading-[1.15]`).
+- Readability pass (2026-04-19): replaced green-tinted dim mode with neutral charcoal — added `charcoal` palette to `tailwind.config.js`, rewrote `html.dark` CSS vars, swapped every `dark:bg-palmetto-800|900|950` surface to `dark:bg-charcoal-*` across Hero/Services/About/Contact/ThemeToggle (brand mark, featured card, footer, availability card intentionally stay green). Bumped eyebrow/accent text `palmetto-300` → `palmetto-200` site-wide and raised muted text contrast (`slate-500`→`600`, `sand-100/60|75|80`→`/80|85|90`, footer copy to full-opacity). Restructured Coverage pill to stack `Seat · {name}` under the county name so "Spartanburg County" no longer overflows.

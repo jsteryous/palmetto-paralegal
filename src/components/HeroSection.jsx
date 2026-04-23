@@ -18,21 +18,22 @@ export default function HeroSection({ brand }) {
         <div className="min-w-0 max-w-2xl">
           <p className="inline-flex items-center gap-2 rounded-full border border-palmetto-200 bg-white px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-palmetto-800 dark:border-charcoal-700 dark:bg-charcoal-800 dark:text-palmetto-200">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-palmetto-600 dark:bg-palmetto-300" />
-            Title Searches · Greenville &amp; Upstate SC
+            For Upstate SC Attorneys &amp; Small Firms
           </p>
 
           <h1
             id="hero-heading"
             className="mt-7 font-display text-5xl font-semibold leading-[1.02] text-palmetto-900 dark:text-sand-50 md:text-6xl"
           >
-            Title searches you can trust,
-            <span className="text-palmetto-700 dark:text-palmetto-200"> backed by {brand.yearsExperience}+ years of experience.</span>
+            Title search overflow for Upstate SC attorneys.
+            <span className="text-palmetto-700 dark:text-palmetto-200"> Backed by {brand.yearsExperience}+ years in SC property records.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700 dark:text-sand-100/85">
-            {brand.name} delivers clear, attorney-ready title reports for real estate
-            matters across {brand.city} and {brand.serviceArea}. Thorough research.
-            Organized documents. No surprises at closing.
+            {brand.name} handles title work, deed and lien research, and document prep
+            for solo attorneys and small firms across {brand.city} and {brand.serviceArea} —
+            without the cost of a full-time hire. Clean reports. Fast turnaround. No
+            surprises at closing.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -40,7 +41,7 @@ export default function HeroSection({ brand }) {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-palmetto-900 px-7 py-4 text-sm font-semibold text-white shadow-soft hover:-translate-y-0.5 hover:bg-palmetto-700 dark:bg-palmetto-600 dark:hover:bg-palmetto-500"
             >
-              Request a Title Search
+              Send a Title Search Request
             </a>
             <a
               href="#services"
@@ -56,8 +57,8 @@ export default function HeroSection({ brand }) {
               <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Years researching SC property records</dd>
             </div>
             <div>
-              <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">Upstate</dt>
-              <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Greenville, Spartanburg, Anderson &amp; Pickens counties</dd>
+              <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">Overflow</dt>
+              <dd className="mt-1 text-sm leading-6 text-slate-600 dark:text-sand-100/85">Built for solo &amp; small-firm capacity, not full-time hires</dd>
             </div>
             <div>
               <dt className="font-display text-3xl font-semibold text-palmetto-900 dark:text-sand-50">24h</dt>

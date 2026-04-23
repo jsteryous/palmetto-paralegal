@@ -24,22 +24,22 @@ const services = [
   {
     title: "Title Searches",
     description:
-      "Full-chain title searches with a clear, attorney-ready report: deed history, recorded encumbrances, easements, and exceptions — organized for review and closing.",
+      "Full-chain title searches delivered as an attorney-ready report: deed history, recorded encumbrances, easements, and exceptions — organized for your file and the closing table.",
   },
   {
     title: "Deed & Lien Research",
     description:
-      "Targeted deed, mortgage, judgment, and tax lien pulls with source documents attached, so nothing important shows up after closing.",
+      "Targeted deed, mortgage, judgment, and tax lien pulls with source documents attached, so nothing important surfaces after closing.",
   },
   {
     title: "Property Document Prep",
     description:
-      "Clean packets for real estate matters: legal descriptions, ownership history, supporting exhibits, and a summary your attorney can hand straight to a client.",
+      "Clean packets for real estate matters: legal descriptions, ownership history, supporting exhibits, and a summary you can hand straight to your client.",
   },
   {
     title: "Overflow Paralegal Support",
     description:
-      "Extra capacity for busy periods — title work, intake, filings, and document prep — without adding a full-time hire.",
+      "Extra capacity when your matters stack up — title work, intake, filings, and document prep — without the cost of a full-time hire.",
   },
 ];
 

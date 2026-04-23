@@ -98,37 +98,45 @@ export default function ServicesSection({ brand, services }) {
             </p>
             <h2
               id="services-heading"
-              className="mt-4 max-w-[16ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
+              className="mt-4 max-w-[18ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
             >
-              Title search work, done right the first time.
+              Built for attorneys who need overflow capacity.
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-sand-100/90">
-              {brand.name} is built around one thing: thorough, well-organized title
-              research for attorneys and firms across {brand.city} and {brand.serviceArea}.
-              Every matter gets the same careful eye — because closings shouldn&rsquo;t
-              hinge on a missed record.
+              {brand.name} works alongside real estate attorneys and small firms across
+              {" "}{brand.city} and {brand.serviceArea} — running thorough title searches
+              and document prep so your matters keep moving. Every file gets the same
+              careful eye, because closings shouldn&rsquo;t hinge on a missed record.
             </p>
           </div>
 
-          <div className="rounded-[1.5rem] border border-palmetto-200 bg-white p-7 shadow-sm dark:border-charcoal-700 dark:bg-charcoal-900">
-            <p className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-palmetto-700 dark:text-palmetto-200">
-              What&rsquo;s Included in a Title Search
-            </p>
-            <ul className="mt-5 grid gap-2 text-sm leading-7 text-slate-700 dark:text-sand-100/90">
-              {included.map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <svg
-                    className="mt-1.5 h-3.5 w-3.5 shrink-0 text-palmetto-600 dark:text-palmetto-200"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path d="M7.7 13.3 4.4 10l-1.4 1.4 4.7 4.7 10-10L16.3 4.7Z" />
-                  </svg>
-                  <span dangerouslySetInnerHTML={{ __html: item }} />
-                </li>
-              ))}
-            </ul>
+          <div className="overflow-hidden rounded-[1.5rem] border border-palmetto-200 bg-white shadow-sm dark:border-charcoal-700 dark:bg-charcoal-900">
+            <img
+              src="/img/organized-files.jpg"
+              alt="Organized real estate files and folders ready for attorney review"
+              loading="lazy"
+              className="h-40 w-full object-cover"
+            />
+            <div className="p-7">
+              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-palmetto-700 dark:text-palmetto-200">
+                What&rsquo;s Included in a Title Search
+              </p>
+              <ul className="mt-5 grid gap-2 text-sm leading-7 text-slate-700 dark:text-sand-100/90">
+                {included.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <svg
+                      className="mt-1.5 h-3.5 w-3.5 shrink-0 text-palmetto-600 dark:text-palmetto-200"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M7.7 13.3 4.4 10l-1.4 1.4 4.7 4.7 10-10L16.3 4.7Z" />
+                    </svg>
+                    <span dangerouslySetInnerHTML={{ __html: item }} />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 

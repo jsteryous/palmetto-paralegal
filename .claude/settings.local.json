@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/public/img\")",
+      "Bash(cp \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/pics/attorney office.jpg\" \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/public/img/attorney-office.jpg\")",
+      "Bash(cp \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/pics/closing table.jpg\" \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/public/img/closing-table.jpg\")",
+      "Bash(cp \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/pics/organized files.jpg\" \"C:/Users/alexs/OneDrive/Desktop/palmetto paralegal/public/img/organized-files.jpg\")",
+      "Bash(git add *)"
     ]
   }
 }

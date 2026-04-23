@@ -54,12 +54,12 @@ const pillars = [
   {
     title: "Attorney-ready deliverables",
     description:
-      "Every report is formatted for quick review: clear chain, flagged exceptions, source documents attached, and a summary your attorney can hand straight to the client.",
+      "Every report is formatted for quick review: clear chain, flagged exceptions, source documents attached, and a summary you can hand straight to your client.",
   },
   {
-    title: "Responsive and straightforward",
+    title: "Easy to work with",
     description:
-      "Clear scope, predictable timelines, and no hand-holding required. Most new matters get a reply within 24 hours.",
+      "Clear scope, predictable turnaround, and no hand-holding required. You send the matter and the property; you get a clean file back. Most new requests get a reply within 24 hours.",
   },
 ];
 
@@ -72,19 +72,29 @@ export default function AboutSection({ brand }) {
     >
       <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:px-8">
         <div className="max-w-xl">
+          <div className="mb-8 overflow-hidden rounded-[1.5rem] border border-palmetto-100 shadow-sm dark:border-charcoal-700">
+            <img
+              src="/img/attorney-office.jpg"
+              alt="Attorney's desk with case files and a desk lamp"
+              loading="lazy"
+              className="h-56 w-full object-cover"
+            />
+          </div>
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-palmetto-700 dark:text-palmetto-200">
             About
           </p>
           <h2
             id="about-heading"
-            className="mt-4 max-w-[16ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
+            className="mt-4 max-w-[18ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
           >
-            {brand.yearsExperience}+ years researching South Carolina property records.
+            A trusted hand for real estate attorneys across the Upstate.
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-sand-100/90">
-            Based in {brand.city}, {brand.region}, {brand.name} is a focused paralegal
-            practice specializing in title searches and real estate document work for
-            attorneys, small firms, and growing practices across the Upstate.
+            Based in {brand.city}, {brand.region}, {brand.name} is a focused practice
+            built around one job: making title work and real estate document prep one
+            less thing for {brand.serviceArea} attorneys to manage. {brand.yearsExperience}+
+            years in South Carolina property records, and a working knowledge of how
+            small firms actually run.
           </p>
           <div className="mt-10 overflow-hidden rounded-[1.5rem] border border-palmetto-200 bg-sand-50 dark:border-charcoal-700 dark:bg-charcoal-800">
             <div className="bg-palmetto-900 px-7 py-5 text-sand-50 dark:bg-palmetto-700">
@@ -92,14 +102,14 @@ export default function AboutSection({ brand }) {
                 Best Fit
               </p>
               <p className="mt-2 font-display text-xl font-semibold">
-                Real estate attorneys and small firms
+                Solo attorneys and small real estate firms
               </p>
             </div>
             <div className="px-7 py-6">
               <p className="text-base leading-7 text-slate-700 dark:text-sand-100/90">
-                Firms that close real estate matters regularly and want a trusted hand
-                running title searches, pulling supporting documents, and keeping files
-                clean from first call through closing.
+                Firms that close real estate matters regularly and would rather hand
+                off the title search, deed pulls, and document packets than hire,
+                train, and manage a full-time paralegal.
               </p>
             </div>
           </div>

@@ -65,16 +65,25 @@ export default function ContactSection({ brand }) {
           </p>
           <h2
             id="contact-heading"
-            className="mt-4 max-w-[14ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
+            className="mt-4 max-w-[16ch] font-display text-4xl font-semibold leading-tight text-palmetto-900 dark:text-sand-50 md:text-5xl"
           >
-            Request a title search or scope a new matter.
+            Send over a matter or scope new overflow help.
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-700 dark:text-sand-100/90">
             Share the property and your timeline. A drafted email will open with the
-            details needed to kick off the search. Most requests get a reply within 24 hours.
+            details needed to start the search. Most attorneys hear back within 24 hours.
           </p>
 
-          <div className="mt-10 grid gap-4">
+          <div className="mt-8 overflow-hidden rounded-[1.25rem] border border-palmetto-100 shadow-sm dark:border-charcoal-700">
+            <img
+              src="/img/closing-table.jpg"
+              alt="Documents and pen at a real estate closing table"
+              loading="lazy"
+              className="h-44 w-full object-cover"
+            />
+          </div>
+
+          <div className="mt-6 grid gap-4">
             <div className="rounded-[1.25rem] border border-palmetto-100 bg-white p-5 shadow-sm dark:border-charcoal-700 dark:bg-charcoal-900">
               <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-palmetto-700 dark:text-palmetto-200">
                 Office
@@ -114,7 +123,7 @@ export default function ContactSection({ brand }) {
                 Title Search Request
               </p>
               <p className="mt-3 max-w-md text-base leading-7 text-slate-700 dark:text-sand-100/90">
-                Share the property details, county, and your closing or review timeline.
+                Firm name, property details, county, and your closing or review timeline.
               </p>
             </div>
             <div className="rounded-full border border-palmetto-200 bg-palmetto-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-palmetto-800 dark:border-palmetto-700 dark:bg-palmetto-700 dark:text-palmetto-100">
@@ -176,7 +185,7 @@ export default function ContactSection({ brand }) {
             </label>
             <label className="block sm:col-span-2">
               <span className="mb-2 block text-sm font-medium text-slate-700 dark:text-sand-100/90">
-                Property &amp; matter details *
+                Firm name, property &amp; matter details *
               </span>
               <textarea
                 name="message"
@@ -184,7 +193,7 @@ export default function ContactSection({ brand }) {
                 value={formValues.message}
                 onChange={handleChange}
                 className={fieldClassName}
-                placeholder="Property address or parcel ID, county, type of matter (purchase, refi, foreclosure, etc.), and your target date."
+                placeholder="Firm name, property address or parcel ID, county, type of matter (purchase, refi, foreclosure, etc.), and your target date."
                 required
               />
             </label>
@@ -206,7 +215,7 @@ export default function ContactSection({ brand }) {
           <div className="mt-8 flex flex-col gap-4 border-t border-palmetto-100 pt-6 sm:flex-row sm:items-center sm:justify-between dark:border-charcoal-700">
             <p className="max-w-md text-sm leading-6 text-slate-600 dark:text-sand-100/80">
               By submitting, you&rsquo;re requesting a reply about title search or
-              paralegal support in {brand.city}, {brand.region}.
+              overflow paralegal support in {brand.city}, {brand.region}.
             </p>
             <button
               type="submit"

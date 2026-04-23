@@ -15,7 +15,7 @@ export default function StructuredData({ brand }) {
     foundingDate: `${foundingYear}-01-01`,
     slogan: "Title Search Specialists",
     description:
-      "Title search services in Greenville and Upstate South Carolina. Attorney-ready reports covering deed chain, liens, easements, and exceptions, backed by 20+ years of property records experience.",
+      "Title search overflow and paralegal support for solo attorneys and small firms in Greenville and Upstate South Carolina. Attorney-ready reports covering deed chain, liens, easements, and exceptions, backed by 20+ years of property records experience.",
     areaServed: [
       { "@type": "City", name: "Greenville", containedInPlace: { "@type": "State", name: "South Carolina" } },
       { "@type": "City", name: "Spartanburg" },
